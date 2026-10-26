@@ -1,4 +1,16 @@
 # zeyple-vagrant
+
+**This project is no longer maintained.** The box runs Ubuntu 14.04 with Python 2's `python-gpgme`, so it can't run Zeyple 2.0.0 or later, which need Python 3 and `python3-gpg`.
+
+To try Zeyple with Postfix, use one of these instead:
+
+* Zeyple's [CI workflow](https://github.com/infertux/zeyple/blob/master/.github/workflows/zeyple.yml) builds the .deb package and checks that a test email sent through Postfix arrives encrypted. See [CONTRIBUTING.md](https://github.com/infertux/zeyple/blob/master/CONTRIBUTING.md#testing) to run it yourself.
+* The [Chef cookbook](https://github.com/infertux/chef-zeyple) sets up Postfix and Zeyple and tests them with Test Kitchen.
+
+The original instructions are below for reference.
+
+---
+
 With the help of vagrant this project aims to create a fully working test environment for [Zeyple](https://github.com/infertux/zeyple/) on your desktop with one single command.
 
 ## Requirements
